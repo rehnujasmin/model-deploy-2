@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POULTRY CHICKEN RATE FORECASTING FOR A WEEK</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+
+   
+
+
+    <div class="container">
+<a1>POULTRY CHICKEN RATE FORECASTING FOR A WEEK</a1>
+
+
+        <form action="{{ url_for('predict')}}" method="post">
+       
+            
+        <br>
+            <h3>Weekly Rates of Wholesale Chicken</h3>  
+	    <table>
+        <tr>
+           <th> Date </th>
+           <th> Predicted Price </th>
+        </tr>
+        <tr>
+        <td>
+        <label for="prediction"></label>
+        </td>
+        </tr>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       
+
+       </form>
+
+<br>
+<br>
+  {{ prediction_text}}
+
+<tr>
+<td>
+</table>
+
+
+
+
+
+
+
+          
+            <br><br><button id="sub" type="submit ">Predict</button>
+        </form>
+             <br>
+    </div>
+        
+
+
+
+    
+
+
+</body>
+
+</html>
